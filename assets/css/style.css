@@ -74,11 +74,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 10px 0;
-  background: linear-gradient(-45deg, #274685,#4dcee2 );
+  background: linear-gradient(-45deg, #274685,#a7e3ec );
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: linear-gradient(-54deg, #27468583,#00ddff );
+  background: linear-gradient(-54deg, #27468583,#a7e3ec );
 }
 
 #header .logo {
