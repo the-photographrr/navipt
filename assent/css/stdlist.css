@@ -1,0 +1,83 @@
+
+.teamhed {
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    
+    margin: 10px 0;
+  }
+  .teamhed::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    bottom: -10px;
+    left: 50px;
+    transform: translateX(-50);
+    background-image: linear-gradient(to left transperent 5%, red);
+  }
+  .teamrow {
+    padding: 40px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .teammbr {
+    flex: 1 1 200px;
+    max-width: 300px;
+    padding: 20px 10px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 10x;
+    color: black;
+  }
+  .teammbr:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(10px);
+  }
+  .tmimg{
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 2px solid #00000000;
+  }
+  .teammbr h2 {
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-size: 24px;
+    color: #2676a7;
+  }
+  .testimonial-carousel .owl-dots {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .testimonial-carousel .owl-dots .owl-dot {
+    display: inline-block;
+  }
+  
+  .testimonial-carousel .owl-dots .owl-dot > span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #cbd3da;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  .testimonial-carousel .owl-dots .owl-dot.active {
+    outline: none;
+  }
+  
+  .testimonial-carousel .owl-dots .owl-dot.active > span {
+    background: linear-gradient(-45deg, #1391a5, #274685);
+  }
