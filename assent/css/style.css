@@ -586,6 +586,6 @@ footer .footer-copyright {
 .card .card-body p {
   word-break: break-all;
 }
-.carousel-indicators{
-  background-color: var(--theme-color);
+.row{
+  display: inline-flexbox;
 }
