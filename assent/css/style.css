@@ -587,6 +587,27 @@ footer .footer-copyright {
 .card .card-body p {
   word-break: break-all;
 }
-.row{
-  display: inline-flexbox;
+.carousel-indicators .round {
+  background-color: var(--btn-clr);
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .slider .card {
+    display: grid !important;
+    grid-template-columns: repeat(2.1fr);
+  }
+}
+
+/* slider */
+
+.slider{
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
 }

@@ -9,12 +9,17 @@
 
     <!-- link -->
     <link rel="stylesheet" href="assent/css/style.css">
+    <link rel="stylesheet" href="assent/css/staff.css">
     <!-- lib -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assent/lib/icofont/icofont.min.css">
     <link rel="stylesheet" href="assent/lib/boxicons/css/boxicons.css">
-    <link rel="stylesheet" href="assent/Font-Awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="assent/css/font icon/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
   </head>
 
 <body>
@@ -127,7 +132,7 @@
               </div>
           <div class="row justify-content-center text-center">
             <div class="col-md-7">
-              <div class="owl-carousel testimonial-carousel">
+              <div class=" ">
                 <div class="review text-center">
                   <blockquote>
                     <p class="hodmsg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea delectus pariatur, numquam
@@ -153,11 +158,11 @@
      <!-- staff list start -->
     
   
-    <div class="container my-5">
 
 
-        <!--Section: Content-->
-        <section class="team-section text-center dark-grey-text">
+
+        <section class="section staff border-top border-bottom text-center">
+          <div class="container">
       
           <!-- Section heading -->
           <div class="section-title">
@@ -169,33 +174,9 @@
             eum porro a pariatur veniam.</p>
       
           <!-- Grid row -->
-          <div id="carousel-example-multi" class="carousel slide carousel-multi-item " data-ride="carousel">
+          <div  class="slider owl-carousel">
 
-            <!--Controls-->
-            <div class="controls-top">
-              <a class="btn-floating" href="#carousel-example-multi" data-slide="prev">
-                <i class="fas fa-chevron-left"></i></a>
-              <a class="btn-floating" href="#carousel-example-multi" data-slide="next">
-                <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <!--/.Controls-->
-          
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-multi" data-slide-to="1"></li>
-              <li data-target="#carousel-example-multi" data-slide-to="2"></li>
-              <li data-target="#carousel-example-multi" data-slide-to="3"></li>
-              <li data-target="#carousel-example-multi" data-slide-to="4"></li>
-              <li data-target="#carousel-example-multi" data-slide-to="5"></li>
-            </ol>
-            <!--/.Indicators-->
-            <div class="carousel-inner " role="listbox"> 
-              <div class="row">
-
-            <div class="carousel-item  active">
-              <div class="row-lg-3  mb-4">
-                <div class="card mb-2">
+                <div class="card">
                 <div class="avatar mx-auto">
                 <img src="assent/images/persons/undraw_teacher_35j2(1).png" class="rounded-circle z-depth-1"
                   alt="Sample avatar">
@@ -219,11 +200,7 @@
                 </a>
               </ul>
             </div>
-            </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row-lg-3  mb-4">
-                <div class="card mb-2">
+                <div class="card ">
                 <div class="avatar mx-auto">
                 <img src="assent/images/persons/undraw_teacher_35j2(1).png" class="rounded-circle z-depth-1"
                   alt="Sample avatar">
@@ -247,13 +224,7 @@
                   </a>
                 </ul>
             </div>
-            </div>
-          </div>
-
-
-            <div class="carousel-item">
-              <div class="row-lg-3  mb-4">
-                <div class="card mb-2">
+                <div class="card">
                 <div class="avatar mx-auto">
                 <img src="assent/images/persons/undraw_teacher_35j2(1).png" class="rounded-circle z-depth-1"
                   alt="Sample avatar">
@@ -277,13 +248,9 @@
                   </a>
                 </ul>
             </div>
-            </div>
-            </div>
 
             
-            <div class="carousel-item ">
-              <div class="row-lg-3  mb-4">
-                <div class="card mb-2 ">
+                <div class="card">
                 <div class="avatar mx-auto">
                 <img src="assent/images/persons/undraw_teacher_35j2(1).png" class="rounded-circle z-depth-1"
                   alt="Sample avatar">
@@ -309,16 +276,7 @@
             </div>
             </div>
             </div>
-            </div>
-          </div>
-          
-        </div>
-
-        </section>
-        <!--Section: Content-->
-      
-      
-      </div>
+</section>
 
       <!-- staff list end -->
 
@@ -455,25 +413,18 @@
     <!-- footer section end -->
 
     <!-- script -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assent/js/particles.js"></script>
     <script type="text/javascript" src="assent/js/app.js"></script>
-    <script type="text/javascript">$('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
-      var next = $(this).next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
     
-      for (var i=0;i<4;i++) {
-        next=next.next();
-        if (!next.length) {
-          next=$(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
-      }
-    });</script>
+        <script>
+          $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+          });
+        </script>
    
 </body>
 
