@@ -584,21 +584,12 @@ footer .footer-copyright {
   transition: 1.1s all ease-in-out;
   border-radius: 20px;
 }
-.card .card-body p {
+.card  p {
   word-break: break-all;
 }
-.carousel-indicators .round {
-  background-color: var(--btn-clr);
-}
 
 
 
-@media screen and (min-width: 992px) {
-  .slider .card {
-    display: grid !important;
-    grid-template-columns: repeat(2.1fr);
-  }
-}
 
 /* slider */
 
@@ -610,4 +601,14 @@ footer .footer-copyright {
   flex: 1;
   margin: 0 10px;
   background: #fff;
+}
+@media screen and (max-width: 750px) {
+  .slider {
+    display: grid !important;
+    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+  }
+
 }
