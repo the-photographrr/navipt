@@ -561,22 +561,10 @@ footer .footer-copyright {
 # LOADER
 --------------------------------------------------------------*/
 
-/* preloader start */
-.loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(../images/logos/805.gif) 50% 50% no-repeat white;
-  opacity: 1;
-}
-/* preloader */
-
 .card {
   transition: 0.4s all ease-in-out;
   display: inline;
+  border: none;
 }
 .card:hover {
   box-shadow: 0 15px 15px rgba(112, 86, 86, 0.6);
